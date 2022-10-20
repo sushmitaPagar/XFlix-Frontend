@@ -1,0 +1,11 @@
+.cardContent {
+    text-align: left;
+    padding: 0.1rem !important;
+    margin: 0px;
+}
+
+.cardContent-body2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

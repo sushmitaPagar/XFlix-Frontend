@@ -1,0 +1,29 @@
+.genre-panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.genre-btn {
+    margin: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1.5rem;
+}
+
+.genre-btn:hover {
+    cursor: pointer;
+}
+
+.active-genre-btn, genre-btn {
+    color: black;
+    background-color: lightgray;
+}
+
+.selectBox {
+    color: black;
+    background-color: lightgray;
+    border: transparent;
+    border-radius: 1.5rem;
+    padding: 0.2rem 1rem;
+    margin: 0.5rem;
+}
