@@ -235,7 +235,7 @@ const UploadModal = () => {
                     </LocalizationProvider>
                 </DialogContent>
                 <DialogActions className="DialogModal-buttons">
-                    <Button className="uploadVideo-btn" onClick={handleUploadVideo}>Upload Video</Button>
+                    <Button id="upload-btn-submit" className="uploadVideo-btn" onClick={handleUploadVideo}>Upload Video</Button>
                     <Button id="upload-btn-cancel" onClick={handleClose}>Cancel</Button>
                 </DialogActions>
             </Dialog>
