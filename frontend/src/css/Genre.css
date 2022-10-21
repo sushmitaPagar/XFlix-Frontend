@@ -5,9 +5,9 @@
 }
 
 .genre-btn {
-    margin: 0.5rem;
-    padding: 0.2rem 1rem;
-    border-radius: 1.5rem;
+    margin: 0.5rem !important;
+    padding: 0.2rem 1rem !important;
+    border-radius: 1.5rem !important;
 }
 
 .genre-btn:hover {
@@ -15,8 +15,8 @@
 }
 
 .active-genre-btn, genre-btn {
-    color: black;
-    background-color: lightgray;
+    color: black !important;
+    background-color: lightgray !important;
 }
 
 .selectBox {

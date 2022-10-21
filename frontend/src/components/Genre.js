@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@mui/material/Button";
 import "../css/Genre.css";
 
 const Genre = ({allGenre, ageList, selectedGenres, age, sort, handleGenreChange, handleAgeChange, handleSortBy}) => {
@@ -9,7 +10,7 @@ const Genre = ({allGenre, ageList, selectedGenres, age, sort, handleGenreChange,
             {/* Genres */}
             {allGenre.map((genre) => {
                 return (
-                    <div
+                    <Button
                         onClick={()=>handleGenreChange(genre)}
                         className={selectedGenres.includes(genre.value) 
                                         ? "genre-btn active-genre-btn" 
@@ -17,7 +18,7 @@ const Genre = ({allGenre, ageList, selectedGenres, age, sort, handleGenreChange,
                         key={genre.value}
                         >
                             {genre.label}
-                        </div>
+                        </Button>
                 );
             })}
             {/* Sort By */}
@@ -34,15 +35,15 @@ const Genre = ({allGenre, ageList, selectedGenres, age, sort, handleGenreChange,
             {/* Age */}
             {ageList.map((eachAge) => {
                 return (
-                    <div
+                    <Button
                         onClick={()=>handleAgeChange(eachAge.value)}
                         className={age === eachAge.value 
-                                        ? "genre-btn active-genre-btn" 
-                                        : "genre-btn"}
+                                        ? "genre-btn content-rating-btn active-genre-btn" 
+                                        : "genre-btn content-rating-btn"}
                         key={eachAge.value}
                         >
                             {eachAge.label}
-                        </div>
+                        </Button>
                 );
             })}
         </div>
