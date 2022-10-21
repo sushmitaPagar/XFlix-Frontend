@@ -17,8 +17,9 @@ const VideoCard = ({video}) => {
       <>
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <Link className="video-tile video-tile-link" to={`/video/${video._id}`}>
+            <Link className="video-tile-link" to={`/video/${video._id}`}>
               <CardMedia
+                className="video-tile"
                 component="img"
                 height="153"
                 image={video.previewImage}

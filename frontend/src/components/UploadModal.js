@@ -236,7 +236,7 @@ const UploadModal = () => {
                 </DialogContent>
                 <DialogActions className="DialogModal-buttons">
                     <Button className="uploadVideo-btn" onClick={handleUploadVideo}>Upload Video</Button>
-                    <Button onClick={handleClose}>Cancel</Button>
+                    <Button id="upload-btn-cancel" onClick={handleClose}>Cancel</Button>
                 </DialogActions>
             </Dialog>
         </>
