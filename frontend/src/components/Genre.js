@@ -21,16 +21,16 @@ const Genre = ({allGenre, ageList, selectedGenres, age, sort, handleGenreChange,
                         </Button>
                 );
             })}
+        </div>
             {/* Sort By */}
             <select
-                className="selectBox"
+                className="selectBox sort-select"
                 value={sort}
                 onChange={(e) => handleSortBy(e)}
                 >
-                <option value="releaseDate">Release Date</option>
-                <option value="viewCount">View Count</option>
+                <option id="release-date-option" value="releaseDate">Release Date</option>
+                <option id="view-count-option" value="viewCount">View Count</option>
             </select>
-        </div>
         <div className="genre-panel">
             {/* Age */}
             {ageList.map((eachAge) => {
