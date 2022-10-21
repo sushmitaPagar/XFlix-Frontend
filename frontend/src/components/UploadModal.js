@@ -145,6 +145,7 @@ const UploadModal = () => {
     return (
         <>
             <Button 
+                id="upload-btn"
                 className="uploadButton" 
                 variant="contained" 
                 component="label" 

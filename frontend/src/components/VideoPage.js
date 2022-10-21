@@ -125,7 +125,7 @@ const VideoPage = () => {
             {loading ?
                     <Loading /> :
                     <div>
-                    <Box className="video-container">
+                    <Box className="video-container video-tile">
                         <Box className="ifarme-container">
                             <iframe
                                 className="iframe"
